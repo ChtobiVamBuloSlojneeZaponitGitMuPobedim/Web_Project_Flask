@@ -15,16 +15,16 @@ def index():
     param = {}
     param['username'] = "Ученик Яндекс.Лицея"
     param['title'] = 'Домашняя страница'
-    #return 'hello world'
-    return render_template('index.html', **param)
+    return 'heaaaaaallo world'
+    #return render_template('index.html', **param)
 
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    form = LoginForm()
-    if form.validate_on_submit():
-        return redirect('/success')
-    return render_template('login.html', title='Авторизация', form=form)
+#@app.route('/login', methods=['GET', 'POST'])
+#def login():
+    #form = LoginForm()
+    #if form.validate_on_submit():
+        #return redirect('/success')
+    #return render_template('login.html', title='Авторизация', form=form)
 
 
 #@app.route('/sign_in', methods=['GET', 'POST'])
