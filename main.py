@@ -15,8 +15,8 @@ def index():
     param = {}
     param['username'] = "Ученик Яндекс.Лицея"
     param['title'] = 'Домашняя страница'
-    return 'hello world'
-    #return render_template('index.html', **param)
+    #return 'hello world'
+    return render_template('index.html', **param)
 
 
 #@app.route('/login', methods=['GET', 'POST'])
