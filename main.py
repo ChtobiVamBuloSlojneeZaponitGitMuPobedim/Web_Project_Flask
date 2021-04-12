@@ -1,6 +1,6 @@
 #from flask_ngrok import run_with_ngrok
 from flask import Flask, render_template, redirect
-#import os
+import os
 
 #from loginform import LoginForm
 #from sign_inform import Sign_inForm
@@ -15,7 +15,7 @@ def index():
     param = {}
     param['username'] = "Ученик Яндекс.Лицея"
     param['title'] = 'Домашняя страница'
-    return 'heaaaaaallo world'
+    return 'hello world'
     #return render_template('index.html', **param)
 
 
@@ -48,8 +48,8 @@ def index():
     #return 'success'
 
 
-#if __name__ == '__main__':
-    #port = int(os.environ.get("PORT", 5000))
-    #app.run(host='0.0.0.0', port=port)
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 #if __name__ == '__main__':
     #app.run(port=8080, host='127.0.0.1')
